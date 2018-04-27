@@ -1,0 +1,81 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+/* @media (min-width: 600px) {
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f6fffe;
+  } */
+
+@media (min-width: 600px) {
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-gap: 50px;
+  background-color: #ffdfdf;
+  /* padding-bottom: 20px; */
+
+  /* @font-face {
+    font-family: "GT-Pressura-Mono-Regular";
+    src: url("GT-Pressura-Mono-Regular.OTF") format("woff2"),
+      url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+  } */
+}
+
+.item1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #0028ff;
+  /* background-color: #ffdfdf; */
+}
+
+.item2 {
+  grid-column: 2 / -2;
+  line-height: 1.5;
+}
+.item3 {
+  grid-column: 1 / -1;
+  /* background-color: #ffdfdf; */
+}
+/* .item4 {
+  grid-column: 3 / 3;
+}
+
+.item5 {
+  grid-column: 2 / 2;
+}
+
+.item6 {
+  grid-column: 3 / 3;
+}
+.item7 {
+  grid-column: 2/ 2;
+}
+.item8 {
+  grid-column: 3/3;
+}
+.item9 {
+  grid-column: 2/2;
+}
+.item10 {
+  grid-column: 3/3;
+} */
+
+@media (min-width: 600px) {
+  .dangrid {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+}
